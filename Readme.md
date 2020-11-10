@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Эралы Токтоназаров](https://up.htmlacademy.ru/adaptive/21/user/1571781).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Новиков](https://up.htmlacademy.ru/adaptive/21/user/42641).
 
 ---
 
