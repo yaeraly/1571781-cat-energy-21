@@ -5,16 +5,28 @@
   padding: 8px 44px;
   width: 280px;
   height: 40px;
-  color: @white;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
 
+  &--text {
+    &--dark-grey {
+      color: @tundora;
+    }
+
+    &--white {
+      color: @white;
+    }
+  }
+
   &--green {
     background-color: @basic-green;
+  }
+
+  &--basic-grey {
+    background-color: @basic-grey;
   }
 }
