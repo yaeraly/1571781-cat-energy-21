@@ -2,7 +2,18 @@
   color: @white;
   font-weight: 400;
   background-image: url("../img/index-background-desktop.jpg");
+  background-position: center top;
   background-repeat: no-repeat;
+  width: 100%;
+  margin: 0 auto;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    min-height: 302px;
+    background-color: @lighten-green;
+  }
 }
 
 .promo__title {
