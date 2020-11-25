@@ -4,4 +4,28 @@
   font-family: "Oswald", "Arial", sans-serif;
   background-color: @white;
   min-width: 320px;
+
+  &--background {
+    &--active {
+      background: @lighten-green, url("../img/index-background-mobile.jpg"), @promo;
+      background-repeat: no-repeat;
+      background-position: 50% 250px;
+      background-size: 100% 302px, auto, 100% 302px;
+    }
+
+    @media (min-width: @tablet-width) {
+      &--active {
+        background: none;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      &--active {
+        background: @lighten-green, url("../img/index-background-desktop.jpg"), @trout;
+        background-size: 50% 694px, auto, 50% 694px;
+        background-position: top right;
+        background-repeat: no-repeat;
+      }
+    }
+  }
 }

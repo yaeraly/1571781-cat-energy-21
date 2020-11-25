@@ -1,4 +1,16 @@
 .container {
-  width: 280px;
   margin: 0 auto;
+  width: @mobile-container-width;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: @tablet-container-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: @desktop-container-width;
+  }
 }

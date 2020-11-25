@@ -1,3 +1,45 @@
 .page-footer {
+  position: relative;
+}
+
+.page-footer__contact {
+  position: relative;
+}
+
+.page-footer__bottom {
   background-color: @basic-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__location {
+  margin: 0 auto;
+  background-color: @basic-grey;
+}
+
+.page-footer__map {
+  border: 0;
+  width: 100%;
+}
+
+.page-footer__text-logo {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid @alto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__text-logo {
+    display: inline;
+    width: 0;
+    border: none;
+    text-align: left;
+  }
 }

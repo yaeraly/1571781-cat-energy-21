@@ -1,5 +1,16 @@
 .real-story {
-  background-color: @basic-grey;
+
+  &--background {
+    background: @background-grey;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--background {
+      background-size: 100% 50%;
+      background-position: bottom;
+    }
+  }
 }
 
 .real-story__text {

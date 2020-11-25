@@ -1,32 +1,65 @@
 .promo {
   color: @white;
   font-weight: 400;
-  background-image: url("../img/index-background-desktop.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  width: 100%;
-  margin: 0 auto;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    min-height: 302px;
-    background-color: @lighten-green;
+.promo__content {
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    color: @black;
   }
 }
 
 .promo__title {
   font-size: 36px;
+  font-weight: 400;
   line-height: 36px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
 }
 
 .promo__slogan {
   font-size: 14px;
   line-height: 14px;
+  text-align: left;
   text-transform: uppercase;
 }
 
-.promo__image {
-  margin-top: 90px;
+@media (min-width: @tablet-width) {
+  .promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__image {
+    position: absolute;
+    top: -30px;
+    left: 30%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .promo__link {
+    position: absolute;
+    top: 240px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__link {
+    position: static;
+    margin-bottom: 450px;
+  }
 }

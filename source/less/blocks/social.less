@@ -1,0 +1,16 @@
+.social__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid @alto;
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    border: none;
+  }
+}
+
+.social__item:not(:last-of-type) {
+  margin-right: 20px;
+}
