@@ -1,0 +1,35 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+    width: @tablet-container-width;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: @desktop-container-width;
+  }
+}
+
+.page-header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: @mobile-container-width;
+  margin: 0 auto;
+}
+
+
+@media (min-width: @desktop-width) {
+  .page-header__row {
+    width: 0;
+    margin: 0;
+  }
+}
