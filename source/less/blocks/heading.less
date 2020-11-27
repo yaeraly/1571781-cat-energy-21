@@ -3,9 +3,17 @@
   font-size: 36px;
   text-align: left;
   font-weight: 400;
+  margin: 25px 0 0 0;
 
   &--h1 {
     line-height: 36px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--h1 {
+      font-size: 60px;
+      line-height: 60px;
+    }
   }
 
   &--h2 {
