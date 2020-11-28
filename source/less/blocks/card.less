@@ -1,3 +1,20 @@
+.card__body {
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .card {
+    background-color: @basic-grey;
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__body {
+    display: block;
+  }
+}
+
 .card__name {
   font-size: 16px;
   font-weight: 400;
@@ -7,11 +24,35 @@
   color: @special-dark-grey-2;
 }
 
+@media (min-width: @tablet-width) {
+  .card__name {
+    min-width: 350px;
+  }
+}
+
 .card__characteristics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
   font-family: "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  text-align: center;
   color: @tundora;
+
+  &--text-bigger {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.card__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: wrap row;
+}
+
+.card__image {
+  max-width: 100%;
 }
