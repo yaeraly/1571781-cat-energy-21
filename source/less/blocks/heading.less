@@ -3,17 +3,9 @@
   font-size: 36px;
   text-align: left;
   font-weight: 400;
-  margin: 25px 0 0 0;
 
   &--h1 {
     line-height: 36px;
-  }
-
-  @media (min-width: @tablet-width) {
-    &--h1 {
-      font-size: 60px;
-      line-height: 60px;
-    }
   }
 
   &--h2 {
@@ -25,5 +17,25 @@
     font-size: 24px;
     line-height: 37px;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .heading {
+    &--h1 {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &--h2 {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &--h3 {
+      font-size: 36px;
+      line-height: 36px;
+      text-align: left;
+    }
   }
 }

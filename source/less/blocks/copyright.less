@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 21px 0;
 }
 
 .copyright__owner {
@@ -12,6 +13,12 @@
   color: @tundora;
   text-decoration: none;
   margin-right: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__owner {
+    margin-right: 22px;
+  }
 }
 
 .copyright__logo path {

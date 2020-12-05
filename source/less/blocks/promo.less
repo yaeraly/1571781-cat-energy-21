@@ -3,14 +3,14 @@
   font-weight: 400;
 }
 
-.promo__content {
-  position: relative;
-}
-
 @media (min-width: @tablet-width) {
   .promo {
     color: @black;
   }
+}
+
+.promo__content {
+  position: relative;
 }
 
 .promo__title {
@@ -18,6 +18,7 @@
   font-weight: 400;
   line-height: 36px;
   text-align: center;
+  margin: 25px 0 0 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -25,41 +26,103 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
+    margin-top: 51px;
+    padding-left: 87px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__title {
+    margin-top: 101px;
+    padding-left: 80px;
   }
 }
 
 .promo__slogan {
   font-size: 14px;
   line-height: 14px;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
+  margin: 26px 0 0 0;
 }
 
 @media (min-width: @tablet-width) {
   .promo__slogan {
     font-size: 20px;
     line-height: 20px;
+    margin-top: 43px;
+    padding-left: 88px;
+    text-align: left;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .promo__image {
-    position: absolute;
-    top: -30px;
-    left: 30%;
+  .promo__slogan {
+    margin-top: 40px;
+    padding-left: 80px;
   }
+}
+
+.promo__images {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: 5px 0 0 0;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__images {
+    margin: -4px 0 0 0;
+    text-align: left;
+  }
+}
+
+.promo__image {
+  display: inline-block;
+  text-align: center;
+  margin: 0 0 0 0;
+}
+
+.promo__safe-image {
+  display: inline-block;
+  text-align: center;
+  margin: 0 0 0 0;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__safe-image {
+    position: absolute;
+    top: 204px;
+    left: 4%;
+    z-index: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__safe-image {
+    position: absolute;
+    top: -80px;
+    left: 39%;
+  }
+}
+
+.promo__link {
+  margin: -4px 0 0 0;
 }
 
 @media (min-width: @tablet-width) {
   .promo__link {
     position: absolute;
-    top: 240px;
+    top: 235px;
+    left: 112px;
+    z-index: 1;
   }
 }
 
 @media (min-width: @desktop-width) {
   .promo__link {
     position: static;
-    margin-bottom: 450px;
+    margin-top: 29px;
+    margin-left: 80px;
   }
 }

@@ -1,14 +1,101 @@
 .real-story {
+  padding-top: 1px;
+  padding-bottom: 33px;
+
+  &--margin-top {
+    margin: 41px 0 0 0;
+  }
+
   &--background {
-    background: @background-grey;
+    background: @background-cararra;
     background-repeat: no-repeat;
   }
 
   @media (min-width: @tablet-width) {
+    &--border-top {
+      border-top: 1px solid @mercury;
+    }
+
     &--background {
-      background-size: 100% 50%;
+      background-size: 100% 43%;
       background-position: bottom;
     }
+
+    &--margin-top {
+      margin: 7px 0 0 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--border-top {
+      border-top: 0;
+    }
+
+    &--background {
+      background-size: 100% 73%;
+    }
+
+    &--margin-top {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .real-story {
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .real-story {
+    padding-bottom: 58px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .real-story__content {
+    padding-top: 1px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .real-story__content {
+    display: flex;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .real-story__result {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .real-story__result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-width: 360px;
+    box-sizing: border-box;
+  }
+}
+
+.real-story__title {
+  text-align-last: left;
+  margin: 25px 0 0 0;
+}
+
+@media (min-width: @tablet-width) {
+  .real-story__title {
+    margin: 40px 0 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .real-story__title {
+    margin: 27px 0 0 0;
   }
 }
 
@@ -19,20 +106,148 @@
   line-height: 18px;
   text-align: left;
   color: @tundora;
+  margin: 35px 0 0 0;
+  padding: 0 1px;
 }
 
-.real-story__start {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
+@media (min-width: @tablet-width) {
+  .real-story__text {
+    margin: 65px 0 0 0;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .real-story__text {
+    margin: 147px 0 0 0;
+  }
+}
+
+.real-story__chronicle {
+  position: relative;
+}
+
+.real-story__slider-bar {
+  margin: 26px 0 0 0;
   text-align: center;
-  text-transform: uppercase;
 }
 
+
+.real-story__start-wrapper {
+  text-align: center;
+}
+
+.real-story__img {
+  margin: 27px 0 0 0;
+}
+
+.real-story__img2 {
+  display: none;
+}
+
+.real-story__end-wrapper {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .real-story__start-wrapper {
+    display: flex;
+  }
+
+  .real-story__img {
+    &--before {
+      width: 354px;
+      height: 620px;
+      margin: 49px 0 0 0;
+    }
+
+    &--after {
+      width: 354px;
+      height: 607px;
+      margin: 57px 0 0 0;
+    }
+  }
+
+  .real-story__img2 {
+    display: inline;
+  }
+
+  .real-story__end-wrapper {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .real-story__img {
+    &--before {
+      width: 354px;
+      height: 620px;
+      margin: -63px 0 0 70px;
+    }
+
+    &--after {
+      width: 354px;
+      height: 607px;
+      margin: -57px 0 0 0;
+    }
+  }
+}
+
+.real-story__start,
 .real-story__end {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  margin-right: 14px;
+  margin-left: 18px;
+}
+
+.real-story__end {
+  margin-left: 12px;
+}
+
+@media (min-width: @tablet-width) {
+  .real-story__slider-bar {
+    box-sizing: border-box;
+    min-width: 572px;
+
+    position: absolute;
+    bottom: 40px;
+    left: 67px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .real-story__start,
+  .real-story__end {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+  }
+}
+
+.real-story__scale {
+  display: inline-block;
+  position: relative;
+  width: 84px;
+  height: 14px;
+  background-color: @white;
+  border-radius: 10px;
+
+  &::before {
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    border-radius: 10px;
+    content: "";
+    width: 35px;
+    height: 6px;
+    background-color: @basic-green;
+  }
 }
