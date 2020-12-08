@@ -1,79 +1,80 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  padding: 1px 0;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    box-sizing: border-box;
-    min-width: @tablet-width;
-    padding: 0 30px;
+    padding: 25px 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
-    flex-direction: row;
-    justify-content: space-between;
     box-sizing: border-box;
     min-width: @desktop-width;
-    padding: 0 110px;
+    padding: 53px 110px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 .page-header__row {
-  box-sizing: border-box;
-  min-width: @mobile-width;
-  padding: 11px 20px 10px 20px;
+  padding: 0 20px;
+  min-height: 65px;
   border-bottom: 1px solid @mercury;
-  display: flex;
+
+  display: grid;
+  grid-template-columns: 34px 101px 1fr;
   align-items: center;
   justify-content: space-between;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__row {
-    padding: 23px 0 0 0;
     border: 0;
+    padding: 0;
+    min-height: 0;
     display: inline-block;
-    min-width: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo-img {
+    width: 174px;
+    height: 52px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__row {
-    padding: 54px 0 0 0;
-    border: 0;
-    display: inline-block;
-    min-width: 0;
+  .page-header__logo-img {
+    width: 202px;
+    height: 59px;
   }
-}
-
-.page-header__column {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-@media (min-width: @desktop-width) {
-  .page-header__row {
-    width: 0;
-    margin: 0;
-  }
-}
-
-.page-header__logo {
-  margin: 0 0 0 0;
 }
 
 .page-header__brand {
-  margin: 2px 0 0 55px;
+  margin: 4px 0 0 55px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__brand {
+    display: none;
+  }
 }
 
 .page-header__toogle {
-  margin: -6px 16px 0 0;
+  justify-self: end;
+  margin: -4px 16px 0 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__toogle {
+    display: none;
+  }
 }
