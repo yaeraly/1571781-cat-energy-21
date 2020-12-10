@@ -40,6 +40,43 @@
   .radio__text {
     font-size: 20px;
     line-height: 30px;
+
+    &::before {
+      top: -7px;
+      left: -61px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid @special-grey;
+    }
+
+    &::after {
+      display: none;
+      top: 5px;
+      left: -49px;
+      width: 18px;
+      height: 18px;
+      background-color: @basic-green;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .radio__text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 32px;
+
+
+    &::before {
+      top: -7px;
+      left: -61px;
+    }
+
+    &::after {
+      display: none;
+      top: 5px;
+      left: -49px;
+    }
   }
 }
 
@@ -47,7 +84,7 @@
   position: absolute;
   opacity: 0;
 
-  &:checked ~ .radio__text:after {
+  &:checked ~ .radio__text::after {
     display: block;
   }
 }

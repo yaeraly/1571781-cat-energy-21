@@ -2,12 +2,35 @@
   cursor: pointer;
 }
 
+@media (min-width: @desktop-width) {
+  .checkbox {
+    &--first {
+      margin-right: 48px;
+    }
+
+    &--second {
+      margin-right: 80px;
+    }
+
+    &--third {
+      margin-right: 141px;
+    }
+
+    &--fourth {
+      margin-right: 47px;
+    }
+  }
+}
+
 .checkbox__input {
   opacity: 0;
 
-
   &:not(:last-child) {
     margin-bottom: 23px;
+  }
+
+  &:checked ~ .checkbox__text::after {
+    display: block;
   }
 }
 
@@ -35,9 +58,10 @@
   }
 
   &::after {
+    display: none;
     top: 2px;
-    left: -34px;
-    width: 5px;
+    left: -36px;
+    width: 8px;
     height: 15px;
     transform: rotate(45deg);
     border-right: 1px solid @basic-green;
@@ -47,7 +71,48 @@
 
 @media (min-width: @tablet-width) {
   .checkbox__text {
+    margin-left: 35px;
     font-size: 20px;
     line-height: 30px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+    }
+
+    &::before {
+      top: -6px;
+      left: -59px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid @special-grey;
+    }
+
+    &::after {
+      display: none;
+      top: 2px;
+      left: -42px;
+      width: 8px;
+      height: 18px;
+      transform: rotate(45deg);
+      border-right: 1px solid @basic-green;
+      border-bottom: 1px solid @basic-green;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .checkbox__text {
+    &::before {
+      top: -6px;
+      left: -61px;
+    }
+
+    &::after {
+      display: none;
+      top: 2px;
+      left: -42px;
+    }
   }
 }

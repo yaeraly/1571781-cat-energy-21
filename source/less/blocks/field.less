@@ -11,21 +11,65 @@
   text-transform: uppercase;
 }
 
+@media (min-width: @tablet-width) {
+  .field {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .field__name {
   margin-right: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .field__name {
+    margin-right: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .field__name {
+    margin-right: 18px;
+  }
 }
 
 .field__weight {
   margin-right: 17px;
 }
 
+@media (min-width: @tablet-width) {
+  .field__weight {
+    margin-right: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .field__weight {
+    margin-right: 22px;
+  }
+}
+
 .field__age {
   margin-right: 9px;
+}
+
+@media (min-width: @desktop-width) {
+  .field__age {
+    margin-right: 9px;
+  }
 }
 
 .field__email {
   margin-top: -6px;
   margin-right: 11px;
+}
+
+@media (min-width: @tablet-width) {
+  .field__email {
+    margin-top: 1px;
+    margin-right: 22px;
+  }
 }
 
 .field__mobile {
@@ -34,14 +78,10 @@
 }
 
 @media (min-width: @tablet-width) {
-  .field__text {
-    font-size: 20px;
-    line-height: 30px;
+  .field__mobile {
+    margin-top: 0;
+    margin-right: 15px;
   }
-}
-
-.field__input-wrapper {
-  flex-grow: 1;
 }
 
 .field__input {
@@ -56,18 +96,17 @@
   line-height: 18px;
   text-transform: uppercase;
   border: 1px solid @alabaster;
-  -moz-appearance: textfield;
-
-  &::-webkit-inner-spin-button,
-  &::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
 }
 
 @media (min-width: @tablet-width) {
   .field__input {
+    height: 52px;
+    padding: 17px;
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.field__input-wrapper {
+  flex-grow: 1;
 }

@@ -23,6 +23,13 @@
     }
   }
 
+  &--text-size {
+    &-big {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
   &--green {
     background-color: @basic-green;
   }
@@ -34,14 +41,17 @@
 
 @media (min-width: @tablet-width) {
   .button {
-    font-family: "Oswald", "Arial", sans-serif;
-    box-sizing: border-box;
-    display: inline-block;
     font-size: 20px;
-    font-weight: 400;
-    text-align: center;
     height: 54px;
     padding: 18px 0;
-    width: 244px;
+    width: 282px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button {
+    height: 52px;
+    padding: 18px 0;
+    width: 568px;
   }
 }
