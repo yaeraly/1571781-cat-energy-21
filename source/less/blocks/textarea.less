@@ -1,18 +1,23 @@
 .textarea {
   font-family: "Oswald", "Arial", sans-serif;
   box-sizing: border-box;
+  resize: none;
+  min-width: 100%;
+  min-height: 150.5px;
+  color: @tundora;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  text-align: left;
-  color: @tundora;
+  padding: 8px 13px;
   text-transform: uppercase;
-  width: 100%;
+  border: 1px solid @alabaster;
 }
 
 @media (min-width: @tablet-width) {
   .textarea {
     font-size: 20px;
     line-height: 30px;
+    padding: 8px 20px;
+    height: 174px;
   }
 }

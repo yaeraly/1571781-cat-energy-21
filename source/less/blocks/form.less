@@ -1,101 +1,334 @@
+.form {
+  &--container {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    &--container {
+      padding: 0 68px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+
+    &--container {
+      box-sizing: border-box;
+      min-width: @desktop-width;
+      padding: 0 110px;
+    }
+  }
+}
+
+
+.form__title {
+  margin: 27px 0 0 0;
+}
+
+@media (min-width: @tablet-width) {
+  .form__title {
+    margin: 31px 0 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__title {
+    grid-column: 1 / span 2;
+    margin: 16px 0 0 0;
+  }
+}
+
 .form__guide {
+  grid-column: 1 / span 2;
+  margin: 35px 0 30px 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  text-align: left;
   text-transform: uppercase;
 }
 
 @media (min-width: @tablet-width) {
   .form__guide {
+    margin: 56px 0 60px 0;
+    padding-left: 2px;
     font-size: 20px;
     line-height: 30px;
   }
 }
 
-.form__group {
-  border: 0;
-
-  &--bottom-line {
-    &::after {
-      position: absolute;
-      left: 0;
-      content: "";
-      width: 100%;
-      border-bottom: 1px solid @alto;
-    }
-  }
-
-  @media (min-width: @tablet-width) {
-    &--bottom-line {
-      &::after {
-        position: absolute;
-        left: 0;
-        content: "";
-        border: 0;
-      }
-    }
-
-    &--border {
-      border: 1px solid @alto;
-    }
-  }
-
-  &--dark-grey {
-    color: @tundora;
-  }
-
-  &--special-dark-grey {
-    color: @special-dark-grey-2;
+@media (min-width: @desktop-width) {
+  .form__guide {
+    margin: 57px 0 66px 0;
   }
 }
 
-.form__group-caption {
+.form__cat-info {
+  padding: 10px 0 23px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .form__cat-info {
+    padding: 5px 0 72px 3px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__cat-info {
+    grid-column: 1;
+    padding: 0;
+  }
+}
+
+.form__program {
+  position: relative;
+  display: flex;
+  border: none;
+  flex-direction: column;
+  padding: 26px 10px 3px 10px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+  }
+
+  &::before {
+    top: 0;
+    border-top: 1px solid @alto;
+  }
+
+  &::after {
+    border-bottom: 1px solid @alto;
+    bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__program {
+    padding: 30px 55px 5px 55px;
+    border: 1px solid @alabaster;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      border: none;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__program {
+    grid-column: 2;
+    padding: 30px 55px 5px 55px;
+    border: 1px solid @alabaster;
+  }
+}
+
+.form__cat-owner {
+  padding: 35px 0 0 0;
+}
+
+@media (min-width: @tablet-width) {
+  .form__cat-owner {
+    padding: 75px 0 0 2px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__cat-owner {
+    grid-column: 1 / span 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: flex-start;
+    grid-column-gap: 80px;
+    padding: 77px 0 0 0;
+  }
+}
+
+.form__comment {
+  padding: 36px 0 0 0;
+}
+
+@media (min-width: @tablet-width) {
+  .form__comment {
+    padding: 76px 0 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__comment {
+    grid-column: 1 / span 2;
+    padding: 76px 0 0 0;
+  }
+}
+
+.form__option {
+  display: flex;
+  flex-direction: column;
+  padding: 38px 0 0 0;
+}
+
+@media (min-width: @tablet-width) {
+  .form__option {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 25px;
+    grid-column-gap: 57px;
+    padding: 63px 0 0 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__option {
+    grid-column: 1 / span 2;
+    padding: 63px 0 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__option {
+    grid-column: 1 / span 2;
+    padding: 65px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.form__field {
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__field {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.form__radio {
+  margin-bottom: 19px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__radio {
+    margin-bottom: 23px;
+  }
+}
+
+.form__caption {
+  margin: 0 0 0 -3px;
+  color: @black;
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
-  text-align: left;
-  color: @black;
+
+  &--owner {
+    margin-top: 25px;
+  }
+
+  &--comment {
+    margin-top: 25px;
+  }
+
+  &--additional {
+    margin-top: 21px;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .form__group-caption {
+  .form__caption {
+    margin: 0 0 0 -3px;
     font-size: 36px;
     line-height: 36px;
+
+    &--owner {
+      margin-top: 75px;
+    }
+
+    &--comment {
+      margin-top: 65px;
+    }
+
+    &--additional {
+      margin-top: 63px;
+      grid-column: 1 / span 2;
+    }
   }
 }
 
-.form__checkbox-wrapper {
-  display: flex;
-  flex-direction: column;
+@media (min-width: @desktop-width) {
+  .form__caption {
+    margin: 0 0 0 0;
+
+    &--owner {
+      margin-top: 68px;
+      grid-column: 1 / span 2;
+    }
+
+    &--comment {
+      margin-top: 46px;
+    }
+
+    &--additional {
+      margin-top: 63px;
+      grid-column: 1 / span 2;
+    }
+  }
+}
+
+.form__submit {
+  margin-top: 20px;
 }
 
 @media (min-width: @tablet-width) {
-  .form__checkbox-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .form__submit {
+    margin-top: 42px;
+    margin-left: 2px;
+    margin-bottom: 70px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .form__checkbox-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
+  .form__submit {
+    margin-top: 48px;
+  }
+}
+
+.form__note {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  margin: 21px 0 33px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .form__note {
+    float: right;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 58px 106px 0 0;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .form__fields-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .form__groups-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .form__note {
+    float: right;
+    margin: 66px 390px 0 0;
   }
 }
