@@ -6,6 +6,15 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .page-footer__contact {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background-color: @white;
+  }
+}
+
 .page-footer__bottom {
   background-color: @basic-grey;
 }
@@ -13,7 +22,7 @@
 @media (min-width: @tablet-width) {
   .page-footer__bottom {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     background-color: @basic-grey;
   }
@@ -27,20 +36,12 @@
 .page-footer__map {
   border: 0;
   width: 100%;
-}
-
-.page-footer__text-logo {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid @alto;
-  padding: 34px 0 26px 0;
+  height: 363px;
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer__text-logo {
-    width: 30%;
-    border: none;
-    text-align: left;
+  .page-footer__map {
+    width: 100%;
+    height: 400px;
   }
 }
