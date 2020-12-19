@@ -1,0 +1,129 @@
+.product {
+  padding-top: 10px;
+  border-top: 1px solid @special-grey;
+
+  &:last-of-type {
+    margin-bottom: 40px;
+    border-bottom: 1px solid @special-grey;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product {
+    padding: 0 38px;
+    border-top: 1px solid @special-grey;
+    border-left: 1px solid @special-grey;
+    border-right: 1px solid @special-grey;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    grid-row-gap: 10px;
+
+
+    &--last {
+      margin-bottom: 72px;
+      border-bottom: 1px solid @basic-grey-2;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product {
+    padding: 0;
+    display:  grid;
+    grid-template-columns: 1fr 1fr 244px;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: 1 / span 3;
+    border-left: none;
+    border-right: none;
+
+    &--last {
+      margin-bottom: 0;
+      border-bottom: 1px solid @basic-grey-2;
+    }
+  }
+}
+
+.product__name {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 3px 0 0 1px;
+}
+
+@media (min-width: @tablet-width) {
+  .product__name {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 21px 0 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__name {
+    margin: 0;
+    grid-column: 1;
+  }
+}
+
+.product__characteristics {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: @tablet-width) {
+  .product__characteristics {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 29px 0 0 0;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__characteristics {
+    grid-column: 2;
+    margin: 7px 0 0 0;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product__value {
+    margin: 0 0 0 48px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__value {
+    margin: 0 40px 0 48px;
+  }
+}
+
+.product__link {
+  margin: 0 0 17px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .product__link {
+    grid-column: 1 / span 2;
+    margin: 12px 0 26px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__link {
+    margin: 0;
+    grid-column: 3;
+    width: 244px;
+  }
+}

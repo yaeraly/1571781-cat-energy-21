@@ -1,32 +1,71 @@
-.card__body {
-  display: flex;
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 @media (min-width: @tablet-width) {
   .card {
     background-color: @basic-grey;
-    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+
+.card__img {
+  align-self: flex-end;
+  justify-self: center;
+}
+
+@media (min-width: @tablet-width) {
+  .card__img {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .card__body {
-    display: block;
+  .card__desc {
+    margin: 137px 0 0 0;
   }
 }
-
 .card__name {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  text-align: left;
+  margin: 22px 0 0 0;
   text-transform: uppercase;
   color: @special-dark-grey-2;
 }
 
 @media (min-width: @tablet-width) {
   .card__name {
-    min-width: 350px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+.card__mobile-new-line {
+  display: inline-block;
+}
+
+@media (min-width: @tablet-width) {
+  .card__mobile-new-line {
+    display: none;
+  }
+}
+
+.card__tablet-new-line {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .card__tablet-new-line  {
+    display: inline-block;
   }
 }
 
@@ -35,10 +74,12 @@
   grid-template-columns: repeat(2, 1fr);
 
   font-family: "Arial", sans-serif;
+  color: @tundora;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  color: @tundora;
+  margin: 13px 0 0 0;
+  text-transform: capitalize;
 
   &--text-bigger {
     font-size: 14px;
@@ -46,13 +87,45 @@
   }
 }
 
-.card__flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: wrap row;
+@media (min-width: @tablet-width) {
+  .card__characteristics {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 10px 0 0 0;
+  }
 }
 
-.card__image {
-  max-width: 100%;
+@media (min-width: @tablet-width) {
+  .card__key {
+    padding: 8px 0 8px 0;
+    border-bottom: 1px solid @special-grey;
+  }
+}
+
+.card__value {
+  text-align: right;
+  margin: 0;
+
+  &--text-lowercase {
+    text-transform: lowercase;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__value {
+    padding: 8px 0 8px 0;
+    border-bottom: 1px solid @special-grey;
+  }
+}
+
+.card__link {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  margin: 22px 0 23px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .card__link {
+    margin: 0 0 38px 0;
+  }
 }

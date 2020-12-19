@@ -31,261 +31,279 @@
     <nav class="navbar navbar--text-black">
       <ul class="navbar__list">
         <li class="navbar__item"><a class="navbar__link" href="index.html">главная</a></li>
-        <li class="navbar__item"><a class="navbar__link" href="catalog.html">каталог продукции</a></li>
-        <li class="navbar__item navbar__item--active"><a class="navbar__link" href="form.html">подбор программы</a></li>
+        <li class="navbar__item navbar__item--active"><a class="navbar__link" href="catalog.html">каталог продукции</a></li>
+        <li class="navbar__item"><a class="navbar__link" href="form.html">подбор программы</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="page-main container">
-    <h1 class="heading heading--h1">Каталог продукции</h1>
+  <main class="page-main">
+    <h1 class="page-main__title heading heading--h1 container">Каталог продукции</h1>
 
-    <section class="products">
+    <section class="catalog catalog--main">
       <h2 class="visually-hidden">Продукты на выбор</h2>
 
-      <div class="products__section">
-        <div class="card">
-          <div class="card__body">
-            <img class="card__image" src="img/catalog-1.png" width="68" height="86" alt="cat energy pro 500">
+      <div class="catalog__frame card">
+        <picture class="card__img">
+          <source media="(min-width: 768px)" srcset="img/catalog-1-desktop.png" width="161" height="172">
+          <img src="img/catalog-1-mobile.png" width="68" height="86" alt="cat energy pro 500">
+        </picture>
 
-            <div class="card__desc">
-              <p class="card__name">cat energy pro 500 г</p>
+        <div class="card__desc">
+          <p class="card__name">cat energy<br class="card__mobile-new-line"> pro<br class="card__tablet-new-line"> 500 г</p>
 
-              <dl class="card__characteristics">
-                <dt class="card__key">масса</dt>
-                <dd class="card__value">500 г</dd>
+          <dl class="card__characteristics">
+            <dt class="card__key">масса</dt>
+            <dd class="card__value card__value--text-lowercase">500 г</dd>
 
-                <dt class="card__key">вкус</dt>
-                <dd class="card__value">курица</dd>
+            <dt class="card__key">вкус</dt>
+            <dd class="card__value">курица</dd>
 
-                <dt class="card__key">цена</dt>
-                <dd class="card__value">700 Р.</dd>
-              </dl>
-            </div>
-          </div>
-
-          <a class="card__link button button--green button--text-white" href="blank.html">заказать</a>
+            <dt class="card__key">цена</dt>
+            <dd class="card__value">700 Р.</dd>
+          </dl>
         </div>
 
-        <div class="card">
-          <div class="card__body">
-            <img class="card__image" src="img/catalog-2.png" width="84" height="100" alt="cat energy pro 1000">
+        <a class="card__link button button--green button--text-white button--text-size-big" href="blank.html">заказать</a>
+      </div>
 
-            <div class="card__desc">
-              <p class="card__name">cat energy pro 1000 г</p>
+      <div class="catalog__frame card">
+        <picture class="card__img">
+          <source media="(min-width: 768px)" srcset="img/catalog-2-desktop.png" width="172" height="202">
+          <img src="img/catalog-2-mobile.png" width="84" height="101" alt="cat energy pro 1000">
+        </picture>
 
-              <dl class="card__characteristics">
-                <dt class="card__key">масса</dt>
-                <dd class="card__value">1000 г</dd>
+        <div class="card__desc">
+          <p class="card__name">cat energy<br class="card__mobile-new-line"> pro<br class="card__tablet-new-line"> 1000 г</p>
 
-                <dt class="card__key">вкус</dt>
-                <dd class="card__value">курица</dd>
+          <dl class="card__characteristics">
+            <dt class="card__key">масса</dt>
+            <dd class="card__value card__value--text-lowercase">1000 г</dd>
 
-                <dt class="card__key">цена</dt>
-                <dd class="card__value">1000 Р.</dd>
-              </dl>
-            </div>
-          </div>
+            <dt class="card__key">вкус</dt>
+            <dd class="card__value">курица</dd>
 
-          <a class="card__link button button--green button--text-white" href="blank.html">заказать</a>
+            <dt class="card__key">цена</dt>
+            <dd class="card__value">1000 Р.</dd>
+          </dl>
         </div>
 
-        <div class="card">
-          <div class="card__body">
-            <img class="card__image" src="img/catalog-3.png" width="68" height="78" alt="cat energy pro 500">
+        <a class="card__link button button--green button--text-white button--text-size-big"
+          href="blank.html">заказать</a>
+      </div>
 
-            <div class="card__desc">
-              <p class="card__name">cat energy pro 500 г</p>
+      <div class="catalog__frame card">
+        <picture class="card__img">
+          <source media="(min-width: 768px)" srcset="img/catalog-3-desktop.png" width="163" height="174">
+          <img src="img/catalog-3-mobile.png" width="68" height="78" alt="cat energy pro 500">
+        </picture>
 
-              <dl class="card__characteristics">
-                <dt class="card__key">масса</dt>
-                <dd class="card__value">500 г</dd>
+        <div class="card__desc">
+          <p class="card__name">cat energy<br class="card__mobile-new-line"> pro<br class="card__tablet-new-line"> 500 г</p>
 
-                <dt class="card__key">вкус</dt>
-                <dd class="card__value">рыба</dd>
+          <dl class="card__characteristics">
+            <dt class="card__key">масса</dt>
+            <dd class="card__value card__value--text-lowercase">500 г</dd>
 
-                <dt class="card__key">цена</dt>
-                <dd class="card__value">700 Р.</dd>
-              </dl>
-            </div>
-          </div>
-          <a class="card__link button button--green button--text-white" href="blank.html">заказать</a>
+            <dt class="card__key">вкус</dt>
+            <dd class="card__value">рыба</dd>
+
+            <dt class="card__key">цена</dt>
+            <dd class="card__value">700 Р.</dd>
+          </dl>
         </div>
 
-        <div class="card">
-          <div class="card__body">
-            <img class="card__image" src="img/catalog-4.png" width="84" height="100" alt="cat energy pro 1000">
+        <a class="card__link button button--green button--text-white button--text-size-big"
+          href="blank.html">заказать</a>
+      </div>
 
-            <div class="card__desc">
-              <p class="card__name">cat energy pro 1000 г</p>
+      <div class="catalog__frame card">
+        <picture class="card__img">
+          <source media="(min-width: 768px)" srcset="img/catalog-4-desktop.png" width="172" height="196">
+          <img src="img/catalog-4-mobile.png" width="84" height="101" alt="cat energy pro 1000">
+        </picture>
 
-              <dl class="card__characteristics">
-                <dt class="card__key">масса</dt>
-                <dd class="card__value">1000 г</dd>
+        <div class="card__desc">
+          <p class="card__name">cat energy<br class="card__mobile-new-line"> pro<br class="card__tablet-new-line"> 1000 г</p>
 
-                <dt class="card__key">вкус</dt>
-                <dd class="card__value">курица</dd>
+          <dl class="card__characteristics">
+            <dt class="card__key">масса</dt>
+            <dd class="card__value card__value--text-lowercase">1000 г</dd>
 
-                <dt class="card__key">цена</dt>
-                <dd class="card__value">1000 Р.</dd>
-              </dl>
-            </div>
-          </div>
-          <a class="card__link button button--green button--text-white" href="blank.html">заказать</a>
+            <dt class="card__key">вкус</dt>
+            <dd class="card__value">рыба</dd>
+
+            <dt class="card__key">цена</dt>
+            <dd class="card__value">1000 Р.</dd>
+          </dl>
         </div>
 
-        <div class="card">
-          <div class="card__body">
-            <img class="card__image" src="img/catalog-5.png" width="68" height="78" alt="cat energy slim 500">
+        <a class="card__link button button--green button--text-white button--text-size-big"
+          href="blank.html">заказать</a>
+      </div>
 
-            <div class="card__desc">
-              <p class="card__name">cat energy slim 500 г</p>
+      <div class="catalog__frame card">
+        <picture class="card__img">
+          <source media="(min-width: 768px)" srcset="img/catalog-5-desktop.png" width="161" height="171">
+          <img src="img/catalog-5-mobile.png" width="68" height="78" alt="cat energy pro 500">
+        </picture>
 
-              <dl class="card__characteristics">
-                <dt class="card__key">масса</dt>
-                <dd class="card__value">500 г</dd>
+        <div class="card__desc">
+          <p class="card__name">cat energy<br class="card__mobile-new-line"> slim<br class="card__tablet-new-line"> 500 г</p>
 
-                <dt class="card__key">вкус</dt>
-                <dd class="card__value">гречка</dd>
+          <dl class="card__characteristics">
+            <dt class="card__key">масса</dt>
+            <dd class="card__value card__value--text-lowercase">500 г</dd>
 
-                <dt class="card__key">цена</dt>
-                <dd class="card__value">400 Р.</dd>
-              </dl>
-            </div>
-          </div>
-          <a class="card__link button button--green button--text-white" href="blank.html">заказать</a>
+            <dt class="card__key">вкус</dt>
+            <dd class="card__value">гречка</dd>
+
+            <dt class="card__key">цена</dt>
+            <dd class="card__value">400 Р.</dd>
+          </dl>
         </div>
 
-        <div class="card">
-          <div class="card__body">
-            <img class="card__image" src="img/catalog-6.png" width="84" height="100" alt="cat energy slim 1000">
+        <a class="card__link button button--green button--text-white button--text-size-big"
+          href="blank.html">заказать</a>
+      </div>
 
-            <div class="card__desc">
-              <p class="card__name">cat energy slim 1000 г</p>
+      <div class="catalog__frame card">
+        <picture class="card__img">
+          <source media="(min-width: 768px)" srcset="img/catalog-6-desktop.png" width="172" height="196">
+          <img src="img/catalog-6-mobile.png" width="84" height="100" alt="cat energy pro 1000">
+        </picture>
 
-              <dl class="card__characteristics">
-                <dt class="card__key">масса</dt>
-                <dd class="card__value">1000 г</dd>
+        <div class="card__desc">
+          <p class="card__name">cat energy<br class="card__mobile-new-line"> slim<br class="card__tablet-new-line"> 1000 г</p>
 
-                <dt class="card__key">вкус</dt>
-                <dd class="card__value">гречка</dd>
+          <dl class="card__characteristics">
+            <dt class="card__key">масса</dt>
+            <dd class="card__value card__value--text-lowercase">1000 г</dd>
 
-                <dt class="card__key">цена</dt>
-                <dd class="card__value">700 Р.</dd>
-              </dl>
-            </div>
-          </div>
-          <a class="card__link button button--green button--text-white" href="blank.html">заказать</a>
+            <dt class="card__key">вкус</dt>
+            <dd class="card__value">гречка</dd>
+
+            <dt class="card__key">цена</dt>
+            <dd class="card__value">700 Р.</dd>
+          </dl>
         </div>
 
-        <div class="card">
-          <div class="card__body">
-            <img class="card__image" src="img/catalog-7.png" width="72" height="84" alt="cat energy slim 500">
+        <a class="card__link button button--green button--text-white button--text-size-big"
+          href="blank.html">заказать</a>
+      </div>
 
-            <div class="card__desc">
-              <p class="card__name">cat energy slim 500 г</p>
+      <div class="catalog__frame card">
+        <picture class="card__img">
+          <source media="(min-width: 768px)" srcset="img/catalog-7-desktop.png" width="163" height="174">
+          <img src="img/catalog-7-mobile.png" width="72" height="84" alt="cat energy pro 500">
+        </picture>
 
-              <dl class="card__characteristics">
-                <dt class="card__key">масса</dt>
-                <dd class="card__value">500 г</dd>
+        <div class="card__desc">
+          <p class="card__name">cat energy<br class="card__mobile-new-line"> slim<br class="card__tablet-new-line"> 500 г</p>
 
-                <dt class="card__key">вкус</dt>
-                <dd class="card__value">рис</dd>
+          <dl class="card__characteristics">
+            <dt class="card__key">масса</dt>
+            <dd class="card__value card__value--text-lowercase">500 г</dd>
 
-                <dt class="card__key">цена</dt>
-                <dd class="card__value">400 Р.</dd>
-              </dl>
-            </div>
-          </div>
-          <a class="card__link button button--green button--text-white" href="blank.html">заказать</a>
+            <dt class="card__key">вкус</dt>
+            <dd class="card__value">рис</dd>
+
+            <dt class="card__key">цена</dt>
+            <dd class="card__value">500 Р.</dd>
+          </dl>
         </div>
 
-        <div class="products__info-section card">
-          <p class="products__info">показать еще 100500 товаров</p>
-          <p class="products__short-info">На самом деле вкусов гораздо больше!</p>
-          <button class="products__to-all button button--basic-grey button--text--dark-grey">показать все</button>
-        </div>
+        <a class="card__link button button--green button--text-white button--text-size-big"
+          href="blank.html">заказать</a>
+      </div>
+
+      <div class="catalog__frame catalog__frame--info">
+        <p class="catalog__goods">показать еще<br class="catalog__new-line"> 100500 товаров</p>
+        <p class="catalog__text">На самом деле вкусов<br class="catalog__new-line"> гораздо больше!</p>
+        <button class="catalog__button button button--basic-grey button--text--dark-grey button--text-size-big button--size-big">показать все</button>
       </div>
     </section>
 
-    <section class="products">
-      <h2 class="products__title">Дополнительные товары</h2>
+    <section class="catalog catalog--extra">
+      <h2 class="catalog__title">Дополнительные товары</h2>
 
-      <div class="card card__flex">
-        <p class="card__name">Сахарозаменитель</p>
+      <div class="product">
+        <p class="product__name">Сахарозаменитель</p>
 
-        <dl class="card__characteristics card__characteristics--text-bigger">
-          <dt class="card__key">1 упаковка (100 г)</dt>
-          <dd class="card__value">200 Р.</dd>
+        <dl class="product__characteristics">
+          <dt class="product__key">1 упаковка (100 г)</dt>
+          <dd class="product__value">200 Р.</dd>
         </dl>
 
-        <a class="card__link button button--green button--text-white" href="blank.html">заказать</a>
+        <a class="product__link button button--green button--text-white" href="blank.html">заказать</a>
       </div>
 
-      <div class="card card__flex">
-        <p class="card__name">Питьевая вода</p>
+      <div class="product">
+        <p class="product__name">Питьевая вода</p>
 
-        <dl class="card__characteristics card__characteristics--text-bigger">
-          <dt class="card__key">5 литров</dt>
-          <dd class="card__value">50 Р.</dd>
+        <dl class="product__characteristics">
+          <dt class="product__key">5 литров</dt>
+          <dd class="product__value">50 Р.</dd>
         </dl>
 
-        <a class="card__link button button--green button--text-white" href="blank.html">заказать</a>
+        <a class="product__link button button--green button--text-white button--text-size-big" href="blank.html">заказать</a>
       </div>
 
-      <div class="card card__flex">
-        <p class="card__name">молоко</p>
+      <div class="product">
+        <p class="product__name">молоко</p>
 
-        <dl class="card__characteristics card__characteristics--text-bigger">
-          <dt class="card__key">1 литр</dt>
-          <dd class="card__value">100 Р.</dd>
+        <dl class="product__characteristics">
+          <dt class="product__key">1 литр</dt>
+          <dd class="product__value">100 Р.</dd>
         </dl>
 
-        <a class="card__link button button--green button--text-white" href="blank.html">заказать</a>
+        <a class="product__link button button--green button--text-white" href="blank.html">заказать</a>
       </div>
 
-      <div class="card card__flex">
-        <p class="card__name">витамины</p>
+      <div class="product product--last">
+        <p class="product__name">витамины</p>
 
-        <dl class="card__characteristics card__characteristics--text-bigger">
-          <dt class="card__key">1 упаковка (30 г)</dt>
-          <dd class="card__value">300 Р.</dd>
+        <dl class="product__characteristics">
+          <dt class="product__key">1 упаковка (30 г)</dt>
+          <dd class="product__value">300 Р.</dd>
         </dl>
+
+        <a class="product__link button button--green button--text-white" href="blank.html">заказать</a>
       </div>
-        <a class="card__link button button--green button--text-white" href="blank.html">заказать</a>
+
+      <div class="catalog__gift">
+        <h2 class="visually-hidden">подарок</h2>
+        <svg class="catalog__icon" width="78" height="80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M64.02 34.71H14.03a3.17 3.17 0 01-3.18-3.16v-9.47a3.17 3.17 0 013.18-3.16h49.98a3.17 3.17 0 013.19 3.16v9.47a3.17 3.17 0 01-3.18 3.16zM14.03 21.35c-.4 0-.74.33-.74.73v9.47c0 .41.33.74.74.74h49.98c.41 0 .75-.33.75-.74v-9.47c0-.4-.34-.73-.75-.73H14.03z" fill="#fff" />
+          <path d="M57.04 67.15H21a6.11 6.11 0 01-6.13-6.09V33.5c0-.67.55-1.2 1.22-1.2.68 0 1.22.53 1.22 1.2v27.56A3.68 3.68 0 0021 64.73h36.04a3.68 3.68 0 003.7-3.67V33.5a1.22 1.22 0 012.44 0v27.56a6.11 6.11 0 01-6.14 6.09z" fill="#fff" />
+          <path d="M39.02 67.15c-.67 0-1.22-.54-1.22-1.21V33.5c0-.67.55-1.2 1.22-1.2.68 0 1.22.53 1.22 1.2v32.44c0 .67-.54 1.2-1.22 1.2zM23.81 21.34a7.8 7.8 0 01-3.17-10.6A7.9 7.9 0 0131.3 7.6c5.82 3.13 8.96 11.86 9.09 12.23l-2.3.8c-.03-.08-2.96-8.22-7.95-10.9a5.46 5.46 0 00-7.36 2.17 5.39 5.39 0 002.2 7.32l-1.17 2.13z" fill="#fff" />
+          <path d="M54.23 21.34l-1.16-2.13a5.38 5.38 0 00-1.03-9.92 5.43 5.43 0 00-4.14.43c-4.98 2.68-7.91 10.82-7.94 10.9l-2.3-.8c.13-.37 3.27-9.1 9.08-12.23a7.86 7.86 0 0111.29 9.1c-.6 2-1.95 3.66-3.8 4.65zM61.95 50.93H16.09c-.67 0-1.22-.54-1.22-1.2 0-.68.55-1.22 1.22-1.22h45.86c.67 0 1.22.54 1.22 1.21 0 .67-.55 1.21-1.22 1.21z" fill="#fff" />
+        </svg>
+        <p class="catalog__slogan">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
       </div>
     </section>
 
-    <section class="gift">
-      <h2 class="visually-hidden">подарок</h2>
-      <svg class="gift__icon" width="78" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M64.02 34.71H14.03a3.17 3.17 0 01-3.18-3.16v-9.47a3.17 3.17 0 013.18-3.16h49.98a3.17 3.17 0 013.19 3.16v9.47a3.17 3.17 0 01-3.18 3.16zM14.03 21.35c-.4 0-.74.33-.74.73v9.47c0 .41.33.74.74.74h49.98c.41 0 .75-.33.75-.74v-9.47c0-.4-.34-.73-.75-.73H14.03z" fill="#fff"/><path d="M57.04 67.15H21a6.11 6.11 0 01-6.13-6.09V33.5c0-.67.55-1.2 1.22-1.2.68 0 1.22.53 1.22 1.2v27.56A3.68 3.68 0 0021 64.73h36.04a3.68 3.68 0 003.7-3.67V33.5a1.22 1.22 0 012.44 0v27.56a6.11 6.11 0 01-6.14 6.09z" fill="#fff"/><path d="M39.02 67.15c-.67 0-1.22-.54-1.22-1.21V33.5c0-.67.55-1.2 1.22-1.2.68 0 1.22.53 1.22 1.2v32.44c0 .67-.54 1.2-1.22 1.2zM23.81 21.34a7.8 7.8 0 01-3.17-10.6A7.9 7.9 0 0131.3 7.6c5.82 3.13 8.96 11.86 9.09 12.23l-2.3.8c-.03-.08-2.96-8.22-7.95-10.9a5.46 5.46 0 00-7.36 2.17 5.39 5.39 0 002.2 7.32l-1.17 2.13z" fill="#fff"/><path d="M54.23 21.34l-1.16-2.13a5.38 5.38 0 00-1.03-9.92 5.43 5.43 0 00-4.14.43c-4.98 2.68-7.91 10.82-7.94 10.9l-2.3-.8c.13-.37 3.27-9.1 9.08-12.23a7.86 7.86 0 0111.29 9.1c-.6 2-1.95 3.66-3.8 4.65zM61.95 50.93H16.09c-.67 0-1.22-.54-1.22-1.2 0-.68.55-1.22 1.22-1.22h45.86c.67 0 1.22.54 1.22 1.21 0 .67-.55 1.21-1.22 1.21z" fill="#fff"/></svg>
-      <p>
-        <pre class="gift__slogan">
-  Закажите все
-и получите чехол для
-  кота в подарок!
-        </pre>
-      </p>
-    </section>
   </main>
 
   <footer class="page-footer page-footer--grey">
     <section class="page-footer__contact contact">
       <h2 class="visually-hidden">наш адрес</h2>
       <p class="contact__offer">приглашаем<br>к сотрудничеству<br>дилеров!</p>
-      <p class="contact__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+      <p class="contact__address">ул. Большая<br>Конюшенная, д. 19/8<br><br class="new-line">Санкт-Петербург</p>
     </section>
 
     <div class="page-footer__location">
       <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.415024106482!2d30.323046999999995!3d59.938717000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sqa!4v1606122173601!5m2!1sen!2sqa" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
 
-    <div class="page-footer__bottom text text--center container">
-      <a class="page-footer__text-logo" href="index.html">
-        <svg width="128" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1.6 22.05A9.5 9.5 0 010 16.31V7.79a9.63 9.63 0 011.5-5.84C2.6.62 4.3 0 6.81 0c2.5 0 4.1.62 5.1 1.74a7.49 7.49 0 011.51 5.03v2.05h-4.9V6.46c.03-.7-.07-1.4-.3-2.05a1.46 1.46 0 00-.59-.63 1.41 1.41 0 00-.82-.19c-.7 0-1.2.2-1.4.72-.23.73-.33 1.49-.3 2.25v10.98c-.05.74.08 1.48.4 2.15.2.52.7.72 1.4.72s1.1-.2 1.3-.72c.23-.7.33-1.42.3-2.15v-2.46h4.91v2.05a7.98 7.98 0 01-1.5 5.13c-1 1.23-2.7 1.84-5.1 1.84-2.41-.1-4.22-.72-5.22-2.05zM19.33.3h5.7l4.22 23.4h-4.61l-.8-4.93h-3.3l-.8 4.92h-4.72L19.33.31zm4.1 15.4l-1.2-9.14-1.2 9.13h2.4zM32.75 4.2h-3.4V.3h11.91v3.8h-3.4v19.6h-5.1V4.2zM50.38.3h8.81v2.47h-5.7v7.7h4.6v2.35h-4.6v8.62h5.7v2.35h-8.91V.31h.1zM61.8.3H64l6.51 15.5V.3h2.6v23.4h-2l-6.6-16v16H61.8V.3zM76.12.3h8.81v2.47h-5.7v7.7h4.6v2.35h-4.6v8.62h5.7v2.35h-8.81V.31zM87.54.3h4.6a7.87 7.87 0 015.11 1.44c1.1.93 1.6 2.57 1.6 4.72 0 2.98-.9 4.82-2.8 5.44l3.2 11.69h-3.1l-3-10.97h-2.5v10.97h-3.21V.31h.1zm4.4 10.06a4.3 4.3 0 002.9-.82c.6-.51.91-1.54.91-3.08a6.77 6.77 0 00-.3-2.25 2.58 2.58 0 00-1.1-1.24 4.47 4.47 0 00-2.2-.4h-1.4v7.69h1.2v.1zM102.86 21.95a10.57 10.57 0 01-1.4-5.95V8.2c-.03-1.48.14-2.96.5-4.4a5.2 5.2 0 011.9-2.67c1.12-.68 2.41-1 3.7-.92 2.11 0 3.61.5 4.52 1.64a7.98 7.98 0 011.4 5.12v.82h-3v-.71c0-.86-.07-1.72-.2-2.57a2.06 2.06 0 00-.8-1.33 3.04 3.04 0 00-1.91-.51 2.96 2.96 0 00-2 .61 2.3 2.3 0 00-.8 1.64c-.14.92-.2 1.85-.2 2.77v8.72a9.53 9.53 0 00.6 3.9c.4.82 1.2 1.13 2.4 1.13a2.37 2.37 0 002.4-1.23c.53-1.3.77-2.7.7-4.1v-1.65h-2.9V12.1h5.8v11.6h-2l-.3-2.67c-.26.89-.8 1.67-1.55 2.2-.74.55-1.64.81-2.55.77a4.9 4.9 0 01-4.3-2.05zM119.99 15.49L115.08.4h3l3.51 11.28 3.4-11.28H128l-4.9 15.08v8.2h-3.01v-8.2h-.1z" fill="#111"/>
-        </svg>
-      </a>
+    <div class="page-footer__bottom container">
+      <div class="logo">
+        <a class="logo__text" href="index.html">
+          <svg width="128" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.6 22.05A9.5 9.5 0 010 16.31V7.79a9.63 9.63 0 011.5-5.84C2.6.62 4.3 0 6.81 0c2.5 0 4.1.62 5.1 1.74a7.49 7.49 0 011.51 5.03v2.05h-4.9V6.46c.03-.7-.07-1.4-.3-2.05a1.46 1.46 0 00-.59-.63 1.41 1.41 0 00-.82-.19c-.7 0-1.2.2-1.4.72-.23.73-.33 1.49-.3 2.25v10.98c-.05.74.08 1.48.4 2.15.2.52.7.72 1.4.72s1.1-.2 1.3-.72c.23-.7.33-1.42.3-2.15v-2.46h4.91v2.05a7.98 7.98 0 01-1.5 5.13c-1 1.23-2.7 1.84-5.1 1.84-2.41-.1-4.22-.72-5.22-2.05zM19.33.3h5.7l4.22 23.4h-4.61l-.8-4.93h-3.3l-.8 4.92h-4.72L19.33.31zm4.1 15.4l-1.2-9.14-1.2 9.13h2.4zM32.75 4.2h-3.4V.3h11.91v3.8h-3.4v19.6h-5.1V4.2zM50.38.3h8.81v2.47h-5.7v7.7h4.6v2.35h-4.6v8.62h5.7v2.35h-8.91V.31h.1zM61.8.3H64l6.51 15.5V.3h2.6v23.4h-2l-6.6-16v16H61.8V.3zM76.12.3h8.81v2.47h-5.7v7.7h4.6v2.35h-4.6v8.62h5.7v2.35h-8.81V.31zM87.54.3h4.6a7.87 7.87 0 015.11 1.44c1.1.93 1.6 2.57 1.6 4.72 0 2.98-.9 4.82-2.8 5.44l3.2 11.69h-3.1l-3-10.97h-2.5v10.97h-3.21V.31h.1zm4.4 10.06a4.3 4.3 0 002.9-.82c.6-.51.91-1.54.91-3.08a6.77 6.77 0 00-.3-2.25 2.58 2.58 0 00-1.1-1.24 4.47 4.47 0 00-2.2-.4h-1.4v7.69h1.2v.1zM102.86 21.95a10.57 10.57 0 01-1.4-5.95V8.2c-.03-1.48.14-2.96.5-4.4a5.2 5.2 0 011.9-2.67c1.12-.68 2.41-1 3.7-.92 2.11 0 3.61.5 4.52 1.64a7.98 7.98 0 011.4 5.12v.82h-3v-.71c0-.86-.07-1.72-.2-2.57a2.06 2.06 0 00-.8-1.33 3.04 3.04 0 00-1.91-.51 2.96 2.96 0 00-2 .61 2.3 2.3 0 00-.8 1.64c-.14.92-.2 1.85-.2 2.77v8.72a9.53 9.53 0 00.6 3.9c.4.82 1.2 1.13 2.4 1.13a2.37 2.37 0 002.4-1.23c.53-1.3.77-2.7.7-4.1v-1.65h-2.9V12.1h5.8v11.6h-2l-.3-2.67c-.26.89-.8 1.67-1.55 2.2-.74.55-1.64.81-2.55.77a4.9 4.9 0 01-4.3-2.05zM119.99 15.49L115.08.4h3l3.51 11.28 3.4-11.28H128l-4.9 15.08v8.2h-3.01v-8.2h-.1z" fill="#111"/>
+          </svg>
+        </a>
+      </div>
 
       <section class="social">
         <h2 class="visually-hidden">Социальные сети</h2>
