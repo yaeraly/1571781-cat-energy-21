@@ -1,14 +1,21 @@
+.navbar {
+  &--closed {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .navbar {
-    padding: 17px 0;
+    display: block;
+    padding: 16px 0;
+  }
+}
 
+@media (min-width: @desktop-width) {
+  .navbar {
     &--text {
       &-white {
         color: @white;
-      }
-
-      &-black {
-        color: @black;
       }
     }
   }
@@ -43,7 +50,7 @@
 
       &::after {
         position: absolute;
-        top: 29px;
+        top: 33px;
         left: 0;
         content: "";
         width: 100%;

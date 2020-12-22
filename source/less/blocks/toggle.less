@@ -1,50 +1,64 @@
 .toggle {
   border: 0;
+  margin: 0;
+  padding: 0;
   cursor: pointer;
+  background-color: @white;
 
-  &--opened {
-    position: relative;
+  &--active {
+    .toggle__inner {
+      background-color: transparent;
 
-    &::before,
-    &::after {
-      position: absolute;
-      content: "";
-      width: 24px;
-      height: 1.5px;
-      background-color: @black;
-    }
+      &::before {
+        top: 0;
+        left: 0;
+        transform: rotate(45deg);
+      }
 
-    &::before {
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      transform: rotate(-45deg);
+      &::after {
+        top: 0;
+        right: 0;
+        transform: rotate(-45deg);
+      }
     }
   }
+}
 
-  &--closed {
-    position: relative;
-    width: 24px;
-    height: 1.5px;
-    background-color: @black;
+.toggle__box {
+  display: inline-block;
+  width: 24px;
+  height: 18px;
+  position: relative;
+  background-color: @white;
+}
 
-    &::before,
-    &::after {
-      position: absolute;
-      top: -8px;
-      left: 0;
-      content: "";
-      width: 24px;
-      height: 16px;
-    }
+.toggle__inner,
+.toggle__inner::before,
+.toggle__inner::after {
+  width: 24px;
+  height: 1.5px;
+  position: absolute;
+  left: 0;
+  background-color: @black;
+  transition-property: transform;
+  transition-duration: 0.15s;
+}
 
-    &::before {
-      border-top: 1.5px solid @black;
-    }
+.toggle__inner {
+  top: 50%;
 
-    &::after {
-      border-bottom: 1.5px solid @black;
-    }
+  &::before,
+  &::after {
+    content: "";
+  }
+
+  &::before {
+    top: -8px;
+    left: 0;
+  }
+
+  &::after {
+    top: 8px;
+    right: 0;
   }
 }
