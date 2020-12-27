@@ -7,8 +7,10 @@
 @media (min-width: @tablet-width) {
   .catalog {
     &--main {
-      display: flex;
-      flex-flow: row wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 60px;
+      grid-row-gap: 140px;
       padding: 0 30px;
     }
 
@@ -25,6 +27,10 @@
       box-sizing: border-box;
       min-width: @desktop-width;
       padding: 0 110px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 80px;
+      grid-row-gap: 144px;
     }
 
     &--extra {
@@ -36,6 +42,7 @@
       grid-template-rows: 118px 1fr 1fr 1fr 1fr;
       grid-template-columns: repeat(4, 1fr);
       grid-column-gap: 80px;
+      margin-top: 73px;
       margin-bottom: 86px;
     }
   }
@@ -54,23 +61,14 @@
   .catalog__frame {
     box-sizing: border-box;
     border: 2px solid @basic-grey;
+    position: relative;
     padding: 0 36px;
     min-width: 324px;
     min-height: 430px;
-    margin-bottom: 140px;
-
-    &:nth-child(2n) {
-      margin-right: 60px;
-    }
 
     &--info {
       font-weight: 400;
       text-align: center;
-    }
-
-    &:nth-last-child(1),
-    &:nth-last-child(2) {
-      margin-bottom: 0;
     }
   }
 }
@@ -79,23 +77,12 @@
   .catalog__frame {
     min-width: 245px;
     min-height: 431px;
-    margin-right: 80px;
-    margin-bottom: 144px;
+  }
+}
 
-    &:nth-child(2n) {
-      margin-right: 80px;
-    }
-
-    &:nth-of-type(4n) {
-      margin-right: 0;
-    }
-
-    &:nth-last-child(1),
-    &:nth-last-child(2),
-    &:nth-last-child(3),
-    &:nth-last-child(4) {
-      margin-bottom: 5px;
-    }
+@media (min-width: @tablet-width) {
+  .card__picture {
+    position: relative;
   }
 }
 
@@ -202,6 +189,10 @@
 
 .catalog__button {
   margin: 22px 0 23px 0;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media (min-width: @tablet-width) {
