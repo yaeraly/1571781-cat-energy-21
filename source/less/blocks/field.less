@@ -108,7 +108,7 @@
   }
 
   &--email {
-    background-image: url("../img/icon-email-mobile.svg");
+    background-image: url("../img/sprite.svg#icon-email");
     background-repeat: no-repeat;
     background-position: 93% center;
   }
@@ -126,16 +126,6 @@
     padding: 17px;
     font-size: 20px;
     line-height: 30px;
-
-    &--email {
-      background-image: url("../img/icon-email-tablet.svg");
-      background-position: 97% center;
-    }
-
-    &--phone {
-      background-image: url("../img/icon-phone-tablet.svg");
-      background-position: 97% center;
-    }
   }
 }
 
@@ -153,4 +143,11 @@
 
 .field__input-wrapper {
   flex-grow: 1;
+  position: relative;
+}
+
+.field__input-background {
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
