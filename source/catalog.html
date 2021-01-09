@@ -20,8 +20,8 @@
       </a>
 
       <a class="page-header__logo-text logo" href="index.html">
-        <svg width="101" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1.26 16.54A6.86 6.86 0 010 12.24v-6.4C-.1 4.3.3 2.77 1.19 1.47 2.05.46 3.39 0 5.37 0 7.35 0 8.61.46 9.4 1.3a5.42 5.42 0 011.19 3.78v1.54H6.72V4.85a3.7 3.7 0 00-.24-1.54 1.16 1.16 0 00-1.1-.62c-.56 0-.95.16-1.11.54a4.85 4.85 0 00-.24 1.7v8.22c-.04.56.07 1.12.32 1.62.15.38.55.54 1.1.54.56 0 .87-.16 1.03-.54.18-.52.26-1.07.24-1.62v-1.84h3.87v1.54a5.77 5.77 0 01-1.19 3.84c-.79.93-2.13 1.39-4.03 1.39-1.9-.08-3.32-.54-4.1-1.54zM15.25.23h4.5l3.33 17.54h-3.64l-.63-3.7h-2.6l-.64 3.7h-3.72L15.25.23zm3.24 11.54l-.95-6.85-.94 6.85h1.9zM25.84 3.15h-2.68V.23h9.4v2.85h-2.69v14.69h-4.03V3.15zM39.75.23h6.96v1.85h-4.5v5.77h3.63v1.77H42.2v6.46h4.5v1.77h-7.03V.23h.08zM48.76.23h1.74l5.14 11.62V.23h2.05v17.54h-1.58l-5.21-12v12h-2.14V.23zM60.06.23h6.96v1.85h-4.5v5.77h3.63v1.77H62.5v6.46h4.5v1.77h-6.95V.23zM69.07.23h3.64c1.43-.1 2.85.28 4.03 1.08C77.6 2 78 3.23 78 4.85c0 2.23-.7 3.61-2.21 4.07l2.53 8.77h-2.45L73.5 9.46h-1.98v8.23H69V.23h.08zm3.48 7.54c.81.06 1.63-.15 2.3-.62.47-.38.7-1.15.7-2.3a4.85 4.85 0 00-.23-1.7c-.18-.39-.49-.71-.87-.92a3.69 3.69 0 00-1.74-.3h-1.1v5.76h.94v.08zM81.16 16.46a7.61 7.61 0 01-1.1-4.46V6.15c-.02-1.11.11-2.22.4-3.3.26-.81.78-1.51 1.5-2 .88-.51 1.9-.75 2.92-.7 1.66 0 2.84.39 3.55 1.23a5.77 5.77 0 011.11 3.85v.62h-2.37V5.3c0-.65-.05-1.29-.16-1.93-.06-.4-.3-.76-.63-1a2.5 2.5 0 00-1.5-.38 2.42 2.42 0 00-1.58.46 1.75 1.75 0 00-.63 1.23c-.1.69-.16 1.38-.16 2.08v6.54c-.06 1 .1 2 .47 2.92.32.62.95.85 1.9.85a1.96 1.96 0 001.9-.93c.41-.97.6-2.02.55-3.07v-1.23h-2.3V9.08h4.59v8.69h-1.58l-.24-2c-.2.67-.64 1.25-1.22 1.66-.6.4-1.3.6-2.02.57a4.05 4.05 0 01-3.4-1.54zM94.68 11.62L90.8.3h2.37l2.76 8.46L98.63.3H101l-3.87 11.3v6.16h-2.37v-6.15h-.08z" fill="#111"/>
+        <svg width="101" height="18">
+          <use xlink:href="img/sprite.svg#text-logo"></use>
         </svg>
       </a>
 
@@ -50,6 +50,9 @@
 
       <div class="catalog__frame card">
         <picture class="card__picture">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-1-tablet.webp 1x, img/catalog-1-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/catalog-1-mobile.webp 1x, img/catalog-1-mobile@2x.webp 2x">
+
           <source media="(min-width: 768px)" srcset="img/catalog-1-tablet.png 1x, img/catalog-1-tablet@2x.png 2x">
           <img class="card__img card__img--first" src="img/catalog-1-mobile.png" srcset="img/catalog-1-mobile@2x.png 2x" width="68" height="86" alt="cat energy pro 500">
         </picture>
@@ -74,6 +77,9 @@
 
       <div class="catalog__frame card">
         <picture class="card__picture">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-2-tablet.webp 1x, img/catalog-2-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/catalog-2-mobile.webp 1x, img/catalog-2-mobile@2x.webp 2x">
+
           <source media="(min-width: 768px)" srcset="img/catalog-2-tablet.png 1x, img/catalog-2-tablet@2x.png 2x">
           <img class="card__img card__img--second" src="img/catalog-2-mobile.png" srcset="img/catalog-2-mobile@2x.png 2x" width="84" height="101" alt="cat energy pro 1000">
         </picture>
@@ -99,6 +105,9 @@
 
       <div class="catalog__frame card">
         <picture class="card__picture">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-3-tablet.webp 1x, img/catalog-3-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/catalog-3-mobile.webp 1x, img/catalog-3-mobile@2x.webp 2x">
+
           <source media="(min-width: 768px)" srcset="img/catalog-3-tablet.png 1x, img/catalog-3-tablet@2x.png 2x">
           <img class="card__img card__img--third" src="img/catalog-3-mobile.png"  src="img/catalog-3-mobile@2x.png 2x" width="68" height="78" alt="cat energy pro 500">
         </picture>
@@ -124,6 +133,9 @@
 
       <div class="catalog__frame card">
         <picture class="card__picture">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-4-tablet.webp 1x, img/catalog-4-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/catalog-4-mobile.webp 1x, img/catalog-4-mobile@2x.webp 2x">
+
           <source media="(min-width: 768px)" srcset="img/catalog-4-tablet.png 1x, img/catalog-4-tablet@2x.png 2x">
           <img class="card__img card__img--fourth" src="img/catalog-4-mobile.png" srcset="img/catalog-4-mobile@2x.png 2x" width="84" height="101" alt="cat energy pro 1000">
         </picture>
@@ -149,6 +161,9 @@
 
       <div class="catalog__frame card">
         <picture class="card__picture">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-5-tablet.webp 1x, img/catalog-5-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/catalog-5-mobile.webp 1x, img/catalog-5-mobile@2x.webp 2x">
+
           <source media="(min-width: 768px)" srcset="img/catalog-5-tablet.png 1x, img/catalog-5-tablet@2x.png 2x">
           <img class="card__img card__img--fifth" src="img/catalog-5-mobile.png" srcset="img/catalog-5-mobile@2x.png 2x" width="68" height="78" alt="cat energy pro 500">
         </picture>
@@ -174,6 +189,9 @@
 
       <div class="catalog__frame card">
         <picture class="card__picture">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-6-tablet.webp 1x, img/catalog-6-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/catalog-6-mobile.webp 1x, img/catalog-6-mobile@2x.webp 2x">
+
           <source media="(min-width: 768px)" srcset="img/catalog-6-tablet.png 1x, img/catalog-6-tablet@2x.png 2x">
           <img class="card__img card__img--sixth" src="img/catalog-6-mobile.png" srcset="img/catalog-6-mobile@2x.png 2x" width="84" height="100" alt="cat energy pro 1000">
         </picture>
@@ -199,6 +217,9 @@
 
       <div class="catalog__frame card">
         <picture class="card__picture">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-7-tablet.webp 1x, img/catalog-7-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/catalog-7-mobile.webp 1x, img/catalog-7-mobile@2x.webp 2x">
+
           <source media="(min-width: 768px)" srcset="img/catalog-7-tablet.png 1x, img/catalog-7-tablet@2x.png 2x">
           <img class="card__img card__img--seventh" src="img/catalog-7-mobile.png" srcset="img/catalog-7-mobile@2x.png 2x" width="72" height="84" alt="cat energy pro 500">
         </picture>
@@ -278,11 +299,8 @@
 
       <div class="catalog__gift">
         <h2 class="visually-hidden">подарок</h2>
-        <svg class="catalog__icon" width="78" height="80" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M64.02 34.71H14.03a3.17 3.17 0 01-3.18-3.16v-9.47a3.17 3.17 0 013.18-3.16h49.98a3.17 3.17 0 013.19 3.16v9.47a3.17 3.17 0 01-3.18 3.16zM14.03 21.35c-.4 0-.74.33-.74.73v9.47c0 .41.33.74.74.74h49.98c.41 0 .75-.33.75-.74v-9.47c0-.4-.34-.73-.75-.73H14.03z" fill="#fff" />
-          <path d="M57.04 67.15H21a6.11 6.11 0 01-6.13-6.09V33.5c0-.67.55-1.2 1.22-1.2.68 0 1.22.53 1.22 1.2v27.56A3.68 3.68 0 0021 64.73h36.04a3.68 3.68 0 003.7-3.67V33.5a1.22 1.22 0 012.44 0v27.56a6.11 6.11 0 01-6.14 6.09z" fill="#fff" />
-          <path d="M39.02 67.15c-.67 0-1.22-.54-1.22-1.21V33.5c0-.67.55-1.2 1.22-1.2.68 0 1.22.53 1.22 1.2v32.44c0 .67-.54 1.2-1.22 1.2zM23.81 21.34a7.8 7.8 0 01-3.17-10.6A7.9 7.9 0 0131.3 7.6c5.82 3.13 8.96 11.86 9.09 12.23l-2.3.8c-.03-.08-2.96-8.22-7.95-10.9a5.46 5.46 0 00-7.36 2.17 5.39 5.39 0 002.2 7.32l-1.17 2.13z" fill="#fff" />
-          <path d="M54.23 21.34l-1.16-2.13a5.38 5.38 0 00-1.03-9.92 5.43 5.43 0 00-4.14.43c-4.98 2.68-7.91 10.82-7.94 10.9l-2.3-.8c.13-.37 3.27-9.1 9.08-12.23a7.86 7.86 0 0111.29 9.1c-.6 2-1.95 3.66-3.8 4.65zM61.95 50.93H16.09c-.67 0-1.22-.54-1.22-1.2 0-.68.55-1.22 1.22-1.22h45.86c.67 0 1.22.54 1.22 1.21 0 .67-.55 1.21-1.22 1.21z" fill="#fff" />
+        <svg class="catalog__icon" width="78" height="80">
+          <use xlink:href="img/sprite.svg#icon-gift"></use>
         </svg>
         <p class="catalog__slogan">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
       </div>
@@ -304,8 +322,8 @@
     <div class="page-footer__bottom container">
       <div class="logo">
         <a class="logo__text" href="index.html">
-          <svg width="128" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.6 22.05A9.5 9.5 0 010 16.31V7.79a9.63 9.63 0 011.5-5.84C2.6.62 4.3 0 6.81 0c2.5 0 4.1.62 5.1 1.74a7.49 7.49 0 011.51 5.03v2.05h-4.9V6.46c.03-.7-.07-1.4-.3-2.05a1.46 1.46 0 00-.59-.63 1.41 1.41 0 00-.82-.19c-.7 0-1.2.2-1.4.72-.23.73-.33 1.49-.3 2.25v10.98c-.05.74.08 1.48.4 2.15.2.52.7.72 1.4.72s1.1-.2 1.3-.72c.23-.7.33-1.42.3-2.15v-2.46h4.91v2.05a7.98 7.98 0 01-1.5 5.13c-1 1.23-2.7 1.84-5.1 1.84-2.41-.1-4.22-.72-5.22-2.05zM19.33.3h5.7l4.22 23.4h-4.61l-.8-4.93h-3.3l-.8 4.92h-4.72L19.33.31zm4.1 15.4l-1.2-9.14-1.2 9.13h2.4zM32.75 4.2h-3.4V.3h11.91v3.8h-3.4v19.6h-5.1V4.2zM50.38.3h8.81v2.47h-5.7v7.7h4.6v2.35h-4.6v8.62h5.7v2.35h-8.91V.31h.1zM61.8.3H64l6.51 15.5V.3h2.6v23.4h-2l-6.6-16v16H61.8V.3zM76.12.3h8.81v2.47h-5.7v7.7h4.6v2.35h-4.6v8.62h5.7v2.35h-8.81V.31zM87.54.3h4.6a7.87 7.87 0 015.11 1.44c1.1.93 1.6 2.57 1.6 4.72 0 2.98-.9 4.82-2.8 5.44l3.2 11.69h-3.1l-3-10.97h-2.5v10.97h-3.21V.31h.1zm4.4 10.06a4.3 4.3 0 002.9-.82c.6-.51.91-1.54.91-3.08a6.77 6.77 0 00-.3-2.25 2.58 2.58 0 00-1.1-1.24 4.47 4.47 0 00-2.2-.4h-1.4v7.69h1.2v.1zM102.86 21.95a10.57 10.57 0 01-1.4-5.95V8.2c-.03-1.48.14-2.96.5-4.4a5.2 5.2 0 011.9-2.67c1.12-.68 2.41-1 3.7-.92 2.11 0 3.61.5 4.52 1.64a7.98 7.98 0 011.4 5.12v.82h-3v-.71c0-.86-.07-1.72-.2-2.57a2.06 2.06 0 00-.8-1.33 3.04 3.04 0 00-1.91-.51 2.96 2.96 0 00-2 .61 2.3 2.3 0 00-.8 1.64c-.14.92-.2 1.85-.2 2.77v8.72a9.53 9.53 0 00.6 3.9c.4.82 1.2 1.13 2.4 1.13a2.37 2.37 0 002.4-1.23c.53-1.3.77-2.7.7-4.1v-1.65h-2.9V12.1h5.8v11.6h-2l-.3-2.67c-.26.89-.8 1.67-1.55 2.2-.74.55-1.64.81-2.55.77a4.9 4.9 0 01-4.3-2.05zM119.99 15.49L115.08.4h3l3.51 11.28 3.4-11.28H128l-4.9 15.08v8.2h-3.01v-8.2h-.1z" fill="#111"/>
+          <svg width="128" height="24">
+            <use xlink:href="img/sprite.svg#text-logo"></use>
           </svg>
         </a>
       </div>
@@ -316,25 +334,24 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="blank.html">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/icon_vkontakte-tablet.svg">
-                <img class="social__img social__img--vkontakte" src="img/icon_vkontakte-mobile.svg" alt="Наш Вконтакте" width="23" height="16">
-              </picture>
+              <svg class="social__img social__img--vkontakte" width="23" height="16" aria-label="Наш Вконтакте">
+                <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="blank.html">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/icon_instagram-tablet.svg">
-                <img class="social__img social__img--instagram" src="img/icon_instagram-mobile.svg" alt="Наш Инстаграм" width="16" height="16">
-              </picture>
+              <svg class="social__img social__img--instagram" width="16" height="16" aria-label="Наш Инстаграм">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/icon_facebook-tablet.svg">
-              <img class="social__img social__img--facebook" src="img/icon_facebook-mobile.svg" alt="Наш Фейсбук" width="22" height="22">
-            </picture>
+            <a class="social__link" href="blank.html">
+              <svg class="social__img social__img--facebook" width="22" height="22" aria-label="Наш Фейсбук">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </section>
@@ -343,10 +360,11 @@
         <h2 class="visually-hidden">Авторское право</h2>
 
         <a class="copyright__owner" href="https://htmlacademy.ru">HTML Academy</a>
-        <svg class="copyright__logo" width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.64.02L13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24z" fill="#666"/>
+        <svg class="copyright__logo" width="27" height="34">
+          <use xlink:href="img/sprite.svg#html-academy"></use>
         </svg>
       </section>
+    </div>
   </footer>
 
   <script>
