@@ -7,12 +7,14 @@
 @media (min-width: @tablet-width) {
   .navbar {
     display: block;
-    padding: 16px 0;
+    padding: 18px 0 14px 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .navbar {
+    padding: 15px 0 14px 0;
+
     &--text {
       &-white {
         color: @white;
@@ -50,7 +52,7 @@
 
       &::after {
         position: absolute;
-        top: 33px;
+        top: 30px;
         left: 0;
         content: "";
         width: 100%;
@@ -69,6 +71,12 @@
     &--active {
       position: relative;
 
+      &-white {
+        &::after {
+          border-bottom: 2px solid @white;
+        }
+      }
+
       &::after {
         top: 36px;
       }
@@ -77,7 +85,7 @@
 }
 
 .navbar__link {
-  color: inherit;
+  color: @black;
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
@@ -97,5 +105,17 @@
   .navbar__link {
     font-size: 20px;
     line-height: 30px;
+
+    &--white {
+      color: @white;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

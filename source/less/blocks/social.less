@@ -45,6 +45,14 @@
   }
 }
 
+.social__img {
+  fill: @special-grey-2;
+
+  &--facebook {
+    stroke: @special-grey-2;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .social__img {
     &--vkontakte {
@@ -60,6 +68,30 @@
     &--facebook {
       width: 28px;
       height: 33px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__img {
+    &:hover {
+      fill: @basic-green;
+    }
+
+    &:active {
+      fill: @basic-green;
+      fill-opacity: 0.3;
+    }
+
+    &--facebook {
+      &:hover {
+        stroke: @basic-green;
+      }
+
+      &:active {
+        stroke: @basic-green;
+        stroke-opacity: 0.3;
+      }
     }
   }
 }

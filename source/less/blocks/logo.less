@@ -1,3 +1,19 @@
+@media (min-width: @desktop-width) {
+  .logo {
+    &:hover {
+      .logo__tablet {
+        fill-opacity: 0.8;
+      }
+    }
+
+    &:active {
+      .logo__tablet {
+        fill-opacity: 0.6;
+      }
+    }
+  }
+}
+
 @media (min-width: @tablet-width) {
   .logo__img {
     width: 174px;
@@ -12,12 +28,28 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .logo__mobile {
+    display: none;
+  }
+}
+
+.logo__tablet {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .logo__tablet {
+    display: inline;
+  }
+}
+
 .logo__text {
   display: inline-block;
   width: 100%;
   text-align: center;
   border-bottom: 1px solid @alto;
-  padding: 34px 0 26px 0;
+  padding: 40px 0 26px 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -25,5 +57,17 @@
     border: none;
     padding: 26px 0;
     margin: 35px 0 40px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo__svg {
+    &:hover {
+      fill-opacity: 0.8;
+    }
+
+    &:active {
+      fill-opacity: 0.6;
+    }
   }
 }

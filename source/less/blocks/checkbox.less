@@ -19,6 +19,20 @@
     &--fourth {
       margin-right: 47px;
     }
+
+    &:hover {
+      .checkbox__text {
+        &::before {
+          border: 1px solid @special-grey-3;
+        }
+      }
+    }
+
+    &:active {
+      .checkbox__text {
+        opacity: 0.3;
+      }
+    }
   }
 }
 
