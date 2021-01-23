@@ -99,12 +99,6 @@
 
   &--arrows-hidden {
     appearance: textfield;
-
-    // &::-webkit-inner-spin-button,
-    // &::-webkit-outer-spin-button {
-    //   -webkit-appearance: none;
-    //   margin: 0;
-    // }
   }
 
   &--email {
@@ -138,6 +132,37 @@
     &--phone {
       background-position: 96% center;
     }
+
+    &:hover {
+      border: 1px solid @special-grey;
+    }
+
+    &:focus {
+      border: 2px solid @tundora;
+      outline: none;
+    }
+
+    &:invalid {
+      border: 2px solid @status-error;
+      box-shadow: 0 0 0 0;
+
+      .field__input-background {
+        stroke: @status-error;
+      }
+    }
+
+    &:invalid + .field__input-background {
+      stroke: @status-error;
+    }
+
+    &:disabled {
+      border: 2px solid @tundora;
+      background-color: @white;
+    }
+
+    &:disabled + .field__input-background {
+      stroke: @basic-green;
+    }
   }
 }
 
@@ -150,4 +175,6 @@
   position: absolute;
   top: 15px;
   right: 15px;
+  stroke: @special-dark-grey-2;
+  fill: none;
 }

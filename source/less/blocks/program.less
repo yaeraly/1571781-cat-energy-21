@@ -26,10 +26,14 @@
 @media (min-width: @desktop-width) {
   .program {
     box-sizing: border-box;
-    width: 570px;
+    min-width: 570px;
     height: 374px;
     padding: 42px 23px 0 52px;
     margin: 0;
+
+    &--margin-right {
+      margin-right: 80px;
+    }
   }
 }
 
@@ -177,6 +181,34 @@
 @media (min-width: @desktop-width) {
   .program__link {
     margin-top: 26px;
+
+    &:hover {
+      .program__arrow {
+        &--short {
+          display: none;
+        }
+
+        &--long {
+          display: inline-block;
+        }
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+
+      .program__arrow {
+        &--short {
+          display: none;
+        }
+
+        &--long {
+          display: inline-block;
+          fill-opacity: 0.3;
+          stroke-opacity: 0.3;
+        }
+      }
+    }
   }
 }
 
@@ -194,5 +226,30 @@
 @media (min-width: @desktop-width) {
   .program__svg {
     margin: 0 0 3px 24px;
+  }
+}
+
+.program__arrow {
+  fill: @black;
+  stroke: @black;
+
+  &--short {
+    display: none;
+  }
+
+  &--long {
+    display: inline-block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program__arrow {
+    &--short {
+      display: inline-block;
+    }
+
+    &--long {
+      display: none;
+    }
   }
 }

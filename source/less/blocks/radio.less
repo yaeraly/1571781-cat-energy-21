@@ -2,6 +2,24 @@
   cursor: pointer;
 }
 
+@media (min-width: @desktop-width) {
+  .radio {
+    &:hover {
+      .radio__text {
+        &::before {
+          border: 1px solid @special-grey-3;
+        }
+      }
+    }
+
+    &:active {
+      .radio__text {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
 .radio__text {
   position: relative;
   font-size: 16px;

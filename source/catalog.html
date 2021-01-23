@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -12,11 +12,10 @@
   <header class="page-header">
     <div class="page-header__row">
       <a class="page-header__logo logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="logo__img" src="img/logo-mobile.svg" alt="Cat Energy" width="34" height="38">
-        </picture>
+        <svg class="logo__img" width="34" height="38" aria-label="Cat Energy">
+          <use class="logo__tablet" xlink:href="img/sprite.svg#logo-tablet"></use>
+          <use class="logo__mobile" xlink:href="img/sprite.svg#logo-mobile"></use>
+        </svg>
       </a>
 
       <a class="page-header__logo-text logo" href="index.html">
@@ -58,7 +57,7 @@
         </picture>
 
         <div class="card__desc">
-          <p class="card__name">cat energy<br class="card__mobile-new-line"> pro<br class="card__tablet-new-line"> 500 г</p>
+          <p class="card__name">cat energy<br class="card__mobile-new-line"> pro<br class="card__tablet-new-line">&nbsp;500 г</p>
 
           <dl class="card__characteristics">
             <dt class="card__key">масса</dt>
@@ -85,7 +84,7 @@
         </picture>
 
         <div class="card__desc">
-          <p class="card__name">cat energy<br class="card__mobile-new-line"> pro<br class="card__tablet-new-line"> 1000 г</p>
+          <p class="card__name">cat energy<br class="card__mobile-new-line"> pro<br class="card__tablet-new-line">&nbsp;1000 г</p>
 
           <dl class="card__characteristics">
             <dt class="card__key">масса</dt>
@@ -109,11 +108,11 @@
           <source type="image/webp" srcset="img/catalog-3-mobile.webp 1x, img/catalog-3-mobile@2x.webp 2x">
 
           <source media="(min-width: 768px)" srcset="img/catalog-3-tablet.png 1x, img/catalog-3-tablet@2x.png 2x">
-          <img class="card__img card__img--third" src="img/catalog-3-mobile.png"  src="img/catalog-3-mobile@2x.png 2x" width="68" height="78" alt="cat energy pro 500">
+          <img class="card__img card__img--third" src="img/catalog-3-mobile.png" width="68" height="78" alt="cat energy pro 500">
         </picture>
 
         <div class="card__desc">
-          <p class="card__name">cat energy<br class="card__mobile-new-line"> pro<br class="card__tablet-new-line"> 500 г</p>
+          <p class="card__name">cat energy<br class="card__mobile-new-line"> pro<br class="card__tablet-new-line">&nbsp;500 г</p>
 
           <dl class="card__characteristics">
             <dt class="card__key">масса</dt>
@@ -141,7 +140,7 @@
         </picture>
 
         <div class="card__desc">
-          <p class="card__name">cat energy<br class="card__mobile-new-line"> pro<br class="card__tablet-new-line"> 1000 г</p>
+          <p class="card__name">cat energy<br class="card__mobile-new-line"> pro<br class="card__tablet-new-line">&nbsp;1000 г</p>
 
           <dl class="card__characteristics">
             <dt class="card__key">масса</dt>
@@ -169,7 +168,7 @@
         </picture>
 
         <div class="card__desc">
-          <p class="card__name">cat energy<br class="card__mobile-new-line"> slim<br class="card__tablet-new-line"> 500 г</p>
+          <p class="card__name">cat energy<br class="card__mobile-new-line"> slim<br class="card__tablet-new-line">&nbsp;500 г</p>
 
           <dl class="card__characteristics">
             <dt class="card__key">масса</dt>
@@ -197,7 +196,7 @@
         </picture>
 
         <div class="card__desc">
-          <p class="card__name">cat energy<br class="card__mobile-new-line"> slim<br class="card__tablet-new-line"> 1000 г</p>
+          <p class="card__name">cat energy<br class="card__mobile-new-line"> slim<br class="card__tablet-new-line">&nbsp;1000 г</p>
 
           <dl class="card__characteristics">
             <dt class="card__key">масса</dt>
@@ -225,7 +224,7 @@
         </picture>
 
         <div class="card__desc">
-          <p class="card__name">cat energy<br class="card__mobile-new-line"> slim<br class="card__tablet-new-line"> 500 г</p>
+          <p class="card__name">cat energy<br class="card__mobile-new-line"> slim<br class="card__tablet-new-line">&nbsp;500 г</p>
 
           <dl class="card__characteristics">
             <dt class="card__key">масса</dt>
@@ -316,13 +315,14 @@
     </section>
 
     <div class="page-footer__location">
-      <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.415024106482!2d30.323046999999995!3d59.938717000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sqa!4v1606122173601!5m2!1sen!2sqa" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <div class="page-footer__map"></div>
+      <!-- <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.415024106482!2d30.323046999999995!3d59.938717000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sqa!4v1606122173601!5m2!1sen!2sqa" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
     </div>
 
     <div class="page-footer__bottom container">
       <div class="logo">
         <a class="logo__text" href="index.html">
-          <svg width="128" height="24">
+          <svg class="logo__svg" width="128" height="24">
             <use xlink:href="img/sprite.svg#text-logo"></use>
           </svg>
         </a>
@@ -359,35 +359,22 @@
       <section class="copyright">
         <h2 class="visually-hidden">Авторское право</h2>
 
-        <a class="copyright__owner" href="https://htmlacademy.ru">HTML Academy</a>
-        <svg class="copyright__logo" width="27" height="34">
-          <use xlink:href="img/sprite.svg#html-academy"></use>
-        </svg>
+        <a class="copyright__owner" href="https://htmlacademy.ru">
+          <span>HTML Academy</span>
+          <svg class="copyright__logo" width="40" height="50">
+            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+          </svg>
+        </a>
       </section>
     </div>
   </footer>
 
-  <script>
-    let navToggle;
-    let mainNavbar = document.querySelector(".navbar");
-    let toggleButton = document.querySelector(".page-header__toogle");
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQL8K973GBx6DX4IBg0GIJgEWg_UbQWR8&callback=initMap" defer></script> -->
 
-    toggleButton.classList.remove("no-js");
-    toggleButton.classList.add("toggle");
-    mainNavbar.classList.add("navbar--closed");
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
 
-    navToggle = document.querySelector(".toggle");
+  <script src="js/script.min.js"></script>
 
-    navToggle.addEventListener("click", function() {
-      if (navToggle.classList.contains("toggle--active")) {
-        navToggle.classList.remove("toggle--active");
-        mainNavbar.classList.add("navbar--closed");
-      } else {
-        navToggle.classList.add("toggle--active");
-        mainNavbar.classList.remove("navbar--closed");
-      }
-    });
-  </script>
 </body>
 
 </html>
