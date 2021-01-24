@@ -150,15 +150,15 @@ exports.server = server;
 // Build
 
 const build = gulp.series (
-  // clean,
+  clean,
   styles,
   gulp.parallel (
     copy,
     sprite,
     minifyJs,
     minifyHtml,
-    // makeWebp,
-    // minifyImages
+    makeWebp,
+    minifyImages
   )
 );
 
@@ -173,15 +173,15 @@ const watcher = () => {
 }
 
 exports.default = gulp.series (
-  // clean,
+  clean,
   styles,
   gulp.parallel (
     copy,
     sprite,
     minifyJs,
     minifyHtml,
-    // makeWebp,
-    // minifyImages
+    makeWebp,
+    minifyImages
   ),
   server,
   watcher
