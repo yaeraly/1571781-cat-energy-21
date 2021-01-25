@@ -105,7 +105,8 @@
     width: 709px;
     height: 609px;
     top: 311px;
-    left: 4%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -116,6 +117,7 @@
     left: 38.7%;
     width: 552px;
     height: 499px;
+    transform: translateX(0);
   }
 }
 
@@ -141,13 +143,5 @@
 @media (min-width: @desktop-width) {
   .promo__link {
     margin: 51px 0 0 0;
-
-    &:hover {
-      background-color: @basic-green-2;
-    }
-
-    &:active {
-      color: @white-30;
-    }
   }
 }

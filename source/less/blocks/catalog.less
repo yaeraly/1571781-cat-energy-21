@@ -250,6 +250,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: content-box;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -264,6 +271,13 @@
 
     &--margin-bottom {
       margin-bottom: 78px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-origin: content-box;
     }
   }
 }
@@ -282,6 +296,13 @@
 
     &--margin-bottom {
       margin-bottom: 78px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-origin: content-box;
     }
   }
 }

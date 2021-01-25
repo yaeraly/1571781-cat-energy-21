@@ -106,3 +106,13 @@
     display: block;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .radio__input {
+    &:focus + .radio__text {
+        &::before {
+          border: 1px solid @basic-green;
+      }
+    }
+  }
+}

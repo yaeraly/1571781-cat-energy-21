@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body class="page__body">
+<body class="page__body" onresize="initMap()">
   <header class="page-header">
     <div class="page-header__row">
       <a class="page-header__logo logo" href="index.html">
@@ -27,8 +27,8 @@
       </a>
 
       <button class="page-header__toogle no-js" type="button">
-        <span class="toggle__box">
-          <span class="toggle__inner"></span>
+        <span class="toggle__burger">
+          <span class="toggle__line"></span>
           <span class="visually-hidden">открыть меню</span>
         </span>
       </button>
@@ -285,7 +285,7 @@
 
         <dl class="product__characteristics">
           <dt class="product__key">5 литров</dt>
-          <dd class="product__value">50 Р.</dd>
+          <dd class="product__value product__value--second">50 Р.</dd>
         </dl>
 
         <a class="product__link button button--green button--text-white button--text-size-big" href="blank.html">заказать</a>

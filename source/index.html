@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body class="page__body page__body--background">
+<body class="page__body page__body--background" onresize="initMap()">
   <header class="page-header">
     <div class="page-header__row">
       <a class="page-header__logo logo" href="index.html">
@@ -27,8 +27,8 @@
       </a>
 
       <button class="page-header__toogle no-js" type="button">
-        <span class="toggle__box">
-          <span class="toggle__inner"></span>
+        <span class="toggle__burger">
+          <span class="toggle__line"></span>
           <span class="visually-hidden">открыть меню</span>
         </span>
       </button>
@@ -174,22 +174,18 @@
         <div class="real-story__chronicle">
           <div class="real-story__start-wrapper">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
               <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" srcset="img/before-desktop.png 1x, img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x">
               <img class="real-story__img real-story__img--before" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="280" height="232" alt="Борис до похудения">
             </picture>
 
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop.webp 1x, img/after-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
               <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" srcset="img/after-desktop.png 1x, img/after-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x">
               <img class="real-story__img real-story__img--after" src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" width="280" height="232" alt="Борис после похудения">
             </picture>
           </div>

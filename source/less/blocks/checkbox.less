@@ -130,3 +130,13 @@
     }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .checkbox__input {
+    &:focus + .checkbox__text {
+      &::before {
+        border: 1px solid @basic-green;
+      }
+    }
+  }
+}

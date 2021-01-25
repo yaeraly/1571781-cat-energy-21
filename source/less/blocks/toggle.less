@@ -6,7 +6,7 @@
   background-color: @white;
 
   &--active {
-    .toggle__inner {
+    .toggle__line {
       background-color: transparent;
 
       &::before {
@@ -24,7 +24,7 @@
   }
 }
 
-.toggle__box {
+.toggle__burger {
   display: inline-block;
   width: 24px;
   height: 18px;
@@ -32,9 +32,9 @@
   background-color: @white;
 }
 
-.toggle__inner,
-.toggle__inner::before,
-.toggle__inner::after {
+.toggle__line,
+.toggle__line::before,
+.toggle__line::after {
   width: 24px;
   height: 1.5px;
   position: absolute;
@@ -44,7 +44,7 @@
   transition-duration: 0.15s;
 }
 
-.toggle__inner {
+.toggle__line {
   top: 50%;
 
   &::before,
